@@ -23,6 +23,6 @@ jobs:
     - name: Deploy to Azure
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'bot-ig-alprkn'
+        app-name: 'bot-ig-alprknz'
         publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
         package: .
