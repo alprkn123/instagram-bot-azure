@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: ig-bot-alprkn
+    runtime: python
+    region: singapore
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: ""  # KOSONGIN, nanti diisi via dashboard
+      - key: WHISPER_MODEL
+        value: tiny
+      - key: PYTHON_VERSION
+        value: 3.11.10
